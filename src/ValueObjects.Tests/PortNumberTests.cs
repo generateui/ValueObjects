@@ -2,7 +2,7 @@ using FluentAssertions;
 
 namespace ValueObjects.Tests;
 
-public class PoertNumberTests {
+public class PortNumberTests {
 	[Theory]
 	[InlineData(65536)]
 	[InlineData(int.MaxValue)]
