@@ -1,4 +1,4 @@
-﻿namespace ValueObjects;
+﻿namespace ValueObjects.Experimental.NoBaseClass;
 
 /// <summary>
 /// Implementation of https://en.wikipedia.org/wiki/Port_(computer_networking)

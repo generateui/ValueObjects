@@ -13,4 +13,6 @@ A set of types to represent commonly used values as typed objects, instead of pr
 	- ASP.NET controller methods
 	- `System.Text.Json` converters
 	- `System.ComponentModel.TypeConverter` converters
-- 
+
+## State of repo
+Currently mainly implementing many ways on achieving ValueObjects and learning the advantages and disadvantages of each approach for the different usecases.

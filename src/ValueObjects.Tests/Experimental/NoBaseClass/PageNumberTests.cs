@@ -1,6 +1,6 @@
 using FluentAssertions;
 
-namespace ValueObjects.Tests;
+namespace ValueObjects.Experimental.NoBaseClass.Tests;
 
 public class PageNumberTests {
 	[Theory]
