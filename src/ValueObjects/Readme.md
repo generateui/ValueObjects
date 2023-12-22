@@ -6,3 +6,4 @@
 - == override
 - GetHashCode
 - ToString()
+- implicit operators
