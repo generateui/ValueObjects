@@ -16,3 +16,12 @@ A set of types to represent commonly used values as typed objects, instead of pr
 
 ## State of repo
 Currently mainly implementing many ways on achieving ValueObjects and learning the advantages and disadvantages of each approach for the different usecases.
+
+## Further reading / links
+- https://mmapped.blog/posts/25-domain-types.html
+- https://andrewlock.net/using-strongly-typed-entity-ids-to-avoid-primitive-obsession-part-1/
+- https://andrewlock.net/strongly-typed-id-updates/
+- https://github.com/mcintyre321/ValueOf
+- https://www.youtube.com/watch?v=h4uldNA1JUE
+- https://siepman.nl/blog/tiny-types-wrapping-primitive-types
+ 

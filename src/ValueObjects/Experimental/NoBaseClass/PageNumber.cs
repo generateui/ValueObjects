@@ -5,7 +5,7 @@ namespace ValueObjects.Experimental.NoBaseClass;
 /// </summary>
 public sealed class PageNumber :
 	IEquatable<PageNumber>,
-	IComparable<PortNumber> {
+	IComparable<PageNumber> {
 	public PageNumber(int number) {
 		if (number < 1 ) {
 			throw new ArgumentException(
@@ -17,7 +17,7 @@ public sealed class PageNumber :
 
 	public int Value { get; }
 
-	public int CompareTo(PortNumber? other) {
+	public int CompareTo(PageNumber? other) {
 		if (other is null) {
 			return 1;
 		}
@@ -25,10 +25,10 @@ public sealed class PageNumber :
 	}
 
 	public override bool Equals(object? obj) {
-		if (obj is not PortNumber portNumber) {
+		if (obj is not PageNumber pageNumber) {
 			return false;
 		}
-		return Equals(Value, portNumber.Value);
+		return Equals(Value, pageNumber.Value);
 	}
 
 	public bool Equals(PageNumber? other) {
