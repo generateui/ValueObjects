@@ -1,5 +1,5 @@
-using System.Diagnostics.CodeAnalysis;
 using FluentAssertions;
+using static ValueObjects.Common.Tests.TestHelper;
 
 namespace ValueObjects.Common.Tests;
 
@@ -54,11 +54,4 @@ public sealed class SemVerTests
 		bool parses = SemVer.TryParse(version, null, out var semVer);
 		parses.Should().BeFalse();
 	}
-
-#nullable disable warnings
-	private static void AssertNotNull<T>([NotNull] T value)
-	{
-		System.Diagnostics.Trace.Assert(value is { });
-	}
-#nullable enable warnings
 }

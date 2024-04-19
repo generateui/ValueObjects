@@ -3,6 +3,7 @@ Contains commonly used value objects that have a handcrafted implementation.
 
 ## Implementations
 - [SemVer](./SemVer.cs)
+- [DataUri](./DataUri.cs)
 
 ## .NET's built-in value objects
 - `System`
@@ -19,3 +20,10 @@ Contains commonly used value objects that have a handcrafted implementation.
 	- [`CultureInfo`](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo)
 - `System.Net`
 	- [`IPAddress`](https://learn.microsoft.com/en-us/dotnet/api/system.net.ipaddress)
+
+## Common interfaces implemented
+This is a list of common interfaces implemented for generic value objects.
+ - `IParseable<T>`
+ - `IEquatable<T>`
+ - `IComparable`
+ - `IComparable<T>`

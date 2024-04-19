@@ -7,3 +7,6 @@
 - GetHashCode
 - ToString()
 - implicit operators
+## Types of wrappers
+- wraps a string
+	- UnparsedJson
