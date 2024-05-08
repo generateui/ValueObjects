@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValueObjects.Common", "src\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValueObjects.Common.Tests", "src\ValueObjects.Common.Tests\ValueObjects.Common.Tests.csproj", "{20A8F2D8-66BF-4EBA-AE8E-7C7C8E6ADA01}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValueObjects.AspNetCore.TestProject", "src\ValueObjects.AspNetCore.TestProject\ValueObjects.AspNetCore.TestProject.csproj", "{7DC45097-B6A0-4817-99A6-185CBBC4CD0F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{20A8F2D8-66BF-4EBA-AE8E-7C7C8E6ADA01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20A8F2D8-66BF-4EBA-AE8E-7C7C8E6ADA01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20A8F2D8-66BF-4EBA-AE8E-7C7C8E6ADA01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DC45097-B6A0-4817-99A6-185CBBC4CD0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DC45097-B6A0-4817-99A6-185CBBC4CD0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DC45097-B6A0-4817-99A6-185CBBC4CD0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DC45097-B6A0-4817-99A6-185CBBC4CD0F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +50,7 @@ Global
 		{714CF722-BAC6-4343-B793-5A0429132414} = {1E659A30-4730-4971-B363-90B3526A2835}
 		{147CAC6B-7903-4537-82E7-D319DC8678A7} = {1E659A30-4730-4971-B363-90B3526A2835}
 		{20A8F2D8-66BF-4EBA-AE8E-7C7C8E6ADA01} = {1E659A30-4730-4971-B363-90B3526A2835}
+		{7DC45097-B6A0-4817-99A6-185CBBC4CD0F} = {1E659A30-4730-4971-B363-90B3526A2835}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {55468275-ADF1-4FA9-9549-491936F8664E}

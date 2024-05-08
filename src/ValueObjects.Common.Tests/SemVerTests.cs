@@ -33,6 +33,7 @@ public sealed class SemVerTests
 		string? build = null)
 	{
 		bool parses = SemVer.TryParse(version, null, out var semVer);
+		var s = semVer.ToString();
 		parses.Should().BeTrue();
 		semVer.Should().NotBeNull();
 		AssertNotNull(semVer);
