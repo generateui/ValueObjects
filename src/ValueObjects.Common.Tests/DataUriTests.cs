@@ -4,7 +4,6 @@ using static ValueObjects.Common.Tests.TestHelper;
 
 namespace ValueObjects.Common.Tests;
 
-
 // TODO: resolve the + vs %20 issue described in https://stackoverflow.com/questions/1634271
 public sealed class DataUriTests
 {

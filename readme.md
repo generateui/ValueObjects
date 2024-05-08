@@ -41,4 +41,5 @@ Currently mainly implementing many ways on achieving ValueObjects and learning t
 - https://github.com/mcintyre321/ValueOf
 - https://www.youtube.com/watch?v=h4uldNA1JUE
 - https://siepman.nl/blog/tiny-types-wrapping-primitive-types
+- https://martinfowler.com/bliki/ValueObject.html
  

@@ -17,8 +17,8 @@ public sealed class DataUri : IParsable<DataUri>, IEquatable<DataUri>
 		string? mediaType,
 		Dictionary<string, string>? mediaTypeParameters,
 		bool base64,
-		string? data)
-	{
+		string? data) {
+
 		MediaType = mediaType;
 		MediaTypeParameters = mediaTypeParameters is null
 			? noParameters
@@ -55,6 +55,12 @@ public sealed class DataUri : IParsable<DataUri>, IEquatable<DataUri>
 	/// </summary>
 	public string Data { get; }
 
+	public static DataUri Empty { get; } = new DataUri(
+		mediaType: null,
+		mediaTypeParameters: null,
+		base64: false,
+		data: null);
+
 	/// <summary>
 	/// Parsed target string into a data uri.
 	/// </summary>
@@ -69,8 +75,8 @@ public sealed class DataUri : IParsable<DataUri>, IEquatable<DataUri>
 	public static bool TryParse(
 		string? s,
 		IFormatProvider? _,
-		[NotNullWhen(true)] out DataUri? result)
-	{
+		[NotNullWhen(true)] out DataUri? result) {
+
 		result = null;
 		if (s is null) {
 			return false;
@@ -172,8 +178,7 @@ public sealed class DataUri : IParsable<DataUri>, IEquatable<DataUri>
 		return true;
 	}
 
-	public static DataUri Parse(string s, IFormatProvider? provider)
-	{
+	public static DataUri Parse(string s, IFormatProvider? provider) {
 		if (TryParse(s, provider, out var result)) {
 			return result;
 		}
@@ -181,8 +186,7 @@ public sealed class DataUri : IParsable<DataUri>, IEquatable<DataUri>
 		throw new ArgumentException("Argument was not in the specified format");
 	}
 
-	public bool Equals(DataUri? other)
-	{
+	public bool Equals(DataUri? other) {
 		if (other is null) {
 			return false;
 		}
@@ -195,8 +199,7 @@ public sealed class DataUri : IParsable<DataUri>, IEquatable<DataUri>
 
 	public override bool Equals(object? obj) => Equals(obj as DataUri);
 
-	public override int GetHashCode()
-	{
+	public override int GetHashCode() {
 		unchecked {
 			int hash = (int)2166136261;
 			hash = hash * 16777619 + (MediaType is null ? 0 : MediaType.GetHashCode());
