@@ -234,4 +234,12 @@ public sealed class SemVer
 			"provided string was not a semver");
 	}
 
+	public override string ToString()
+	{
+		string mmp = $"{Major}.{Minor}.{Patch}";
+		string preRelease = PreRelease is null ? null : $"-{PreRelease}";
+		string build = Build is null ? null : $"+{Build}";
+		return $"{Major}.{Minor}.{Patch}{preRelease}{build}";
+	}
+
 }

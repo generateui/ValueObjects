@@ -1,0 +1,47 @@
+﻿@page
+@model IndexModel
+@{
+	ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+	<h1 class="display-4">ValueObjects used within Page Model</h1>
+	<div>
+		Use ValueObjects straight in your Model classes.
+	</div>
+	<form method="POST">
+		<fieldset>
+			<label class="fieldset-title">SemVer</label>
+			<label asp-for="SemVer">
+				Input any semver. Examples:
+				<ul>
+					<li><code>1.0.0</code></li>
+					<li><code>0.0.123</code></li>
+					<li><code>1.0.0-alpha1+build1234</code></li>
+				</ul>
+			</label>
+			<input asp-for="SemVer" type="text">
+		</fieldset>
+		<button type="submit">POST</button>
+	</form>
+</div>
+
+<style>
+form {
+	margin: 1em;
+}
+fieldset {
+	border: 1px black solid;
+}
+.fieldset-title {
+	display: block;
+	font-weight: bold;
+}
+fieldset label {
+	display: block;
+}
+button {
+	margin: 1em;
+}
+</style>
+

@@ -1,0 +1,17 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Run ASP.NET core test project",
+			"type": "coreclr",
+			"request": "launch",
+			"program": "${workspaceFolder}/src/ValueObjects.AspNetCore.TestProject/bin/Debug/net7.0/ValueObjects.AspNetCore.TestProject.dll",
+			"url": "http://localhost:7068",
+			"cwd": "${workspaceFolder}/src/ValueObjects.AspNetCore.TestProject",
+			"webRoot": "${workspaceFolder}",
+		}
+	]
+}
