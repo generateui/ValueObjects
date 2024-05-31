@@ -11,6 +11,7 @@ Contains commonly used value objects that have a handcrafted implementation.
 ## Implementations
 - [SemVer](./SemVer.cs)
 - [DataUri](./DataUri.cs)
+- [UnparsedJson](./UnparsedJson.cs)
 
 ## .NET's built-in value objects
 - `System`
@@ -27,6 +28,10 @@ Contains commonly used value objects that have a handcrafted implementation.
 	- [`CultureInfo`](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo)
 - `System.Net`
 	- [`IPAddress`](https://learn.microsoft.com/en-us/dotnet/api/system.net.ipaddress)
+
+## Other libraries
+- [Noda Time](https://github.com/nodatime/nodatime)
+- [Units.NET](https://github.com/angularsen/UnitsNet)
 
 ## Common interfaces implemented
 This is a list of common interfaces implemented for generic value objects.
